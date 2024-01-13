@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password generator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <h1>Password Generator</h1>
+
+    <div class="container">
+        <div>
+            <h2>Password Length</h2>
+        </div>
+        <br>
+        <div class="main">
+            <input type="range" min="1" max="100" value="50" id="slider">
+            <div id="selector">
+              <div class="selectBtn"></div>
+              <div id="selectValue"></div>
+            </div>
+            <div id="progressBar"></div>
+          </div>
+          <div class="buttons">
+            <button class="nothing a-z">a-z</button>
+            <button class="nothing A-Z">A-Z</button>
+            <button class="nothing number">0-9</button>
+            <button class="nothing special">!-?</button>
+          </div>
+          <div class="generate-password">
+            <button class="submit">Generate Password</button>
+          </div>
+    </div>
+
+    <div class="bottom">
+      <input readonly type="text" id="password">
+      <button id="copy">Copy</button>
+    </div>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
+    <script src="./index.js"></script>
+</body>
+</html>
